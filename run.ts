@@ -32,6 +32,7 @@ const res = await octokit.request(
     status: "completed",
     created: `${startTime}..${endTime}`,
     branch: BRANCH,
+    per_page: 100,
     headers: {
       "X-GitHub-Api-Version": "2022-11-28",
     },
